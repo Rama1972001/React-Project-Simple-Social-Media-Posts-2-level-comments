@@ -76,7 +76,7 @@ export const getPosts = async () => {
         },
         {
             id: "3",
-            body: "First comment first child",
+            body: "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis aliquid ipsa sit. A molestias magnam est nulla, at fuga sequi!",
             username: "John",
             userId: "2",
             parentId: null,
@@ -84,7 +84,7 @@ export const getPosts = async () => {
         },
         {
             id: "4",
-            body: "Second comment second child",
+            body: "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis aliquid ipsa sit. A molestias magnam est nulla, at fuga sequi!",
             username: "John",
             userId: "2",
             parentId: null,
