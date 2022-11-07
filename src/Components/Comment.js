@@ -28,18 +28,19 @@ function Comment({ comment, replies, currentUserId, deleteComment, activeComment
     const replyId = parentId ? parentId : comment.id;
     //for root comments , parentId=null , for reply comments .. parentId=comment.id
     return (
-        <div className='comment'>
+        <div className='border border-secondary   p-2 mb-2 border-opacity-50'>
+        <div className='comment  '>
             <div className='comment-image-container'>
 
                 <img src='/PngItem_3918613.png' alt='user' width={50} height={50} />
             </div>
             <div className='comment-right-part'>
                 <div className='comment-content'>
-                    <div className='comment-auther'>
+                    <div className='comment-author'>
                         {comment.username}
 
                     </div>
-                    <div>{createdAt}</div>
+                    <div className='date1'>{createdAt}</div>
                 </div>
 
                 {!isEditing && <div className='comment-text'>
@@ -74,6 +75,7 @@ function Comment({ comment, replies, currentUserId, deleteComment, activeComment
                         <div className='repplies'>
                             {replies.map(reply => (
                                 /*replies same type of comments, it is comment*/
+                              
                                 <Comment
                                     comment={reply}
                                     key={replies.id}
@@ -96,7 +98,7 @@ function Comment({ comment, replies, currentUserId, deleteComment, activeComment
 
                 }
             </div>
-        </div>
+        </div></div>
 
 
     )
